@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'IBM Plex Serif', serif;
+    margin: 0px;
+  }
+
+  img{
+      border-radius: 80%;
+      margin-top: 15px;
+      margin-left: 25%;
+      border: 2px solid white;
+  }
+  
+  .pageHeading {
+    display: block;
+    background: #30d1a9;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+     
+  }
+  .pageHeading> div{
+    font-family: 'Abril Fatface', cursive;
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid white;
+    text-align: center;
+    background: #30d1a9;
+    color: white;
+    width: 750px;
+    height: 165px;
+    }
+  .pageHeading> div> p{
+    font-size:18px;
+    font-family: 'Josefin Slab', serif;
+  }
+  h1 {
+  font-size: 50px;
+  }
+
+  .container {
+  display: grid;
+  grid-template-areas:
+    "side content";
+  grid-template-columns: 350px 3fr 350px;
+  grid-template-rows: auto 3fr auto;
+  grid-gap: 50px;
+  height: 100%;
+  }
+  main {
+    grid-area: content;
+    overflow-wrap: break-word;
+  }
+  
+  aside {
+    grid-area: side;
+    margin-right: 0.5rem;
+    margin-left: 40px;
+    margin-top: 10px;
+    background: #f8f8f8;
+    color: black;
+    text-align: justify
+    overflow-wrap break-word;
+    font-family: 'Changa', sans-serif;
+  }
+  aside h2{
+    margin-left: 15px;
+    font-size: 20px;
+
+  }
+  aside li{
+    font-size: 15px;
+    list-style: none
+  }
+  aside hr{
+      margin-left: 3px;
+      margin-right: 3px;
+      border-style: inset;
+      border-width: 2px;
+      border-color: black;
+  }
