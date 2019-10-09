@@ -49,7 +49,7 @@
     "side content";
   grid-template-columns: 350px 3fr 350px;
   grid-template-rows: auto 3fr auto;
-  grid-gap: 60px;
+  grid-gap: 70px;
   height: 100%;
   }
   main {
